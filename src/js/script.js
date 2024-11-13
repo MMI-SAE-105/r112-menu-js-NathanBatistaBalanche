@@ -9,9 +9,11 @@ toggle.addEventListener("click", () => {
     if (isOpen == false) {
         nav.setAttribute("aria-hidden", "false");
         toggle.setAttribute("aria-expanded","true");
+        body.classList.add("noscroll")
     } else {
         nav.setAttribute("aria-hidden","true")
         toggle.setAttribute("aria-expanded", "false")
+        body.classList.remove("noscroll")
     }
   });
 
